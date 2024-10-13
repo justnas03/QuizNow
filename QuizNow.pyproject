@@ -1,7 +1,7 @@
 {
     "files": [
         "mainwindow.py",
-        "login.ui",
-        "register.ui"
+        "UI/login.ui",
+        "UI/register.ui"
     ]
 }

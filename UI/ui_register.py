@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'register.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.0
+## Created by: Qt User Interface Compiler version 6.7.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -22,7 +22,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(471, 512)
+        Form.resize(471, 547)
         self.logo = QLabel(Form)
         self.logo.setObjectName(u"logo")
         self.logo.setGeometry(QRect(70, 20, 331, 201))
@@ -93,7 +93,7 @@ class Ui_Form(object):
 
         self.pushButton = QPushButton(Form)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(190, 460, 83, 29))
+        self.pushButton.setGeometry(QRect(190, 500, 83, 29))
 
         self.retranslateUi(Form)
 
