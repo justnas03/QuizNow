@@ -10,6 +10,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QStackedWidget
 from database import QuizNowDB
 from UI.ui_login import Ui_MainWindow 
 from UI.ui_register import Ui_Form
+from UI.ui_homepage import Ui_MainWindow as homepage
 from Connect.Login_connect import Login_Connect 
 
 class Login(QMainWindow):
@@ -41,6 +42,11 @@ class Register(QWidget):
         #set Stacked Widget
         self.stwidget = stwidget
         self.stwidget.addWidget(self)
+class Homepage(QMainWindow):
+    def __init__(self,parent=None):
+        super().__init__(parent)
+        self.ui = homepage()
+        self.ui.setupUi(self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -59,5 +65,10 @@ if __name__ == "__main__":
     
     stwidget.setWindowTitle('QuizNow')
     stwidget.show()
+
+
+
+    homepage_window = Homepage()
+    homepage_window.show()
     
     sys.exit(app.exec())
